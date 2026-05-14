@@ -1,0 +1,42 @@
+{
+  "name": "as6yer-el-chemistry",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^3.9.1",
+    "@supabase/ssr": "^0.5.1",
+    "@supabase/supabase-js": "^2.49.1",
+    "@types/stripe-v3": "^8.0.0",
+    "clsx": "^2.1.1",
+    "clerk": "^4.32.0",
+    "framer-motion": "^11.3.14",
+    "openai": "^4.56.0",
+    "postcss": "^8.4.38",
+    "postcss-import": "^16.1.0",
+    "postcss-nested": "^6.2.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-hot-toast": "^2.5.1",
+    "react-use-measure": "^2.1.7",
+    "recharts": "^2.12.7",
+    "tailwind-merge": "^2.5.2",
+    "stripe": "^16.7.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.10",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "eslint": "^9.6.0",
+    "eslint-config-next": "^14.2.5",
+    "typescript": "^5.6.3"
+  }
+}

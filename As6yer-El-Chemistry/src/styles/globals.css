@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Premium neon background + chemistry vibe */
+:root {
+  --bg0: #04050a;
+  --bg1: #070a18;
+  --card: rgba(255, 255, 255, 0.06);
+  --card2: rgba(255, 255, 255, 0.08);
+  --stroke: rgba(255, 255, 255, 0.12);
+  --text: rgba(255, 255, 255, 0.92);
+  --muted: rgba(255, 255, 255, 0.72);
+  --neon-cyan: #22d3ee;
+  --neon-violet: #a855f7;
+  --neon-pink: #ec4899;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  background: radial-gradient(900px circle at 15% 10%, rgba(168, 85, 247, 0.22), transparent 60%),
+    radial-gradient(900px circle at 85% 25%, rgba(34, 211, 238, 0.16), transparent 55%),
+    radial-gradient(600px circle at 40% 90%, rgba(236, 72, 153, 0.10), transparent 60%),
+    linear-gradient(180deg, var(--bg0), var(--bg1));
+  color: var(--text);
+}
+
+/* Light mode overrides */
+html.dark {
+  color-scheme: dark;
+}
+
+html:not(.dark) {
+  color-scheme: light;
+  --bg0: #f7f9ff;
+  --bg1: #eef2ff;
+  --card: rgba(0, 0, 0, 0.03);
+  --card2: rgba(0, 0, 0, 0.04);
+  --stroke: rgba(0, 0, 0, 0.10);
+  --text: rgba(0, 0, 0, 0.88);
+  --muted: rgba(0, 0, 0, 0.64);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    scroll-behavior: auto !important;
+    transition-duration: 0ms !important;
+    animation-duration: 0ms !important;
+  }
+}
